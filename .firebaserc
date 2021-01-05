@@ -1,13 +1,4 @@
 {
-  "targets": {
-    "fir-demo-project": {
-      "hosting": {
-        "my-app": [
-          "fir-demo-project"
-        ]
-      }
-    }
-  },
   "projects": {
     "default": "angular-11-demo-shop"
   }
