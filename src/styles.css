@@ -17,6 +17,10 @@ body {
   flex-direction: row;
 }
 
+.app-width {
+  max-width: 800px;
+}
+
 router-outlet + *  {
   padding: 0 16px;
 }
@@ -137,6 +141,34 @@ app-top-bar h1 {
   background-color: #EEEEEE;
 }
 
+.hero-profile {
+  border: 1px solid gray;
+  padding: 5px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  border-radius: 10px;
+  background-color: lightgreen;
+  color: black;
+}
+
+.job-ad {
+  border: 1px solid gray;
+  padding: 5px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  border-radius: 10px;
+  background-color: lightblue;
+  color: black;
+}
+
+.ad-banner-example {
+  width: 400px;
+}
+
+.main-wrapper {
+  flex: 1;
+  margin-left: 20px;
+}
 
 /*
 Copyright Google LLC. All Rights Reserved.

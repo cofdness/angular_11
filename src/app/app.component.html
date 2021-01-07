@@ -1,5 +1,8 @@
 <app-top-bar></app-top-bar>
 
 <div class="container">
-  <router-outlet></router-outlet>
+  <div class="main-wrapper">
+    <router-outlet></router-outlet>
+  </div>
+  <app-ad-banner [ads]="ads"></app-ad-banner>
 </div>
