@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {CartService} from '../cart.service';
 import {FormBuilder} from '@angular/forms';
+import {PopupService} from '../popup/popup.service';
 
 @Component({
   selector: 'app-cart',
@@ -13,7 +14,8 @@ export class CartComponent implements OnInit {
 
   constructor(
     private cartService: CartService,
-    private formBuilder: FormBuilder
+    private formBuilder: FormBuilder,
+    private popupService: PopupService
   ) {
     this.checkoutForm = this.formBuilder.group({
       name: '',
@@ -28,9 +30,8 @@ export class CartComponent implements OnInit {
   onSubmit(customerData): void {
     // Process checkout data here
     this.items = this.cartService.clearCart();
+    this.popupService.showPopup('Your order has been submitted');
     this.checkoutForm.reset();
-
-    console.warn('Your order has been subitted', customerData);
   }
 
 }

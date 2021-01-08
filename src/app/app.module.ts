@@ -16,6 +16,7 @@ import {HeroJobAdComponent} from './ad/hero-job-ad.component';
 import {HeroProfileComponent} from './ad/hero-profile.component';
 import {AdDirective} from './ad/ad.directive';
 import {AdService} from './ad/ad.service';
+import { PopupComponent } from './popup/popup/popup.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import {AdService} from './ad/ad.service';
     AdBannerComponent,
     HeroJobAdComponent,
     HeroProfileComponent,
-    AdDirective
+    AdDirective,
+    PopupComponent
   ],
   imports: [
     BrowserModule,
